@@ -2,47 +2,76 @@
 <html lang="en" prefix="og: https://ogp.me/ns#">
 
 <head>
-  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-  <link rel="mask-icon" href="/favicon.ico">
-  <link rel="icon" type="image/png" href="favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="./favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="48x48" href="./favicon-48x48.png">
-
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="manifest" href="/site.webmanifest">
   <meta name="msapplication-TileColor" content="#000000">
   <meta name="theme-color" content="#000">
+
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta charset="UTF-8">
 
   <!-- Attempted Link Previews -->
-  <meta property="og:image" content="/assets/techlorePreview.png" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://techlore.tech"/>
-  <meta property="og:title" content="Techlore: Spreading Privacy To The Masses" />
-  <meta property="og:description" content="Techlore is spreading privacy and security to the masses; home of Go Incognito, tutorials, reviews, VPN tools, Plexus, communities, and more!"/>
-
+  <meta property="og:url" content="https://privacytools.0xgingi.com"/>
+  <meta property="og:title" content="Privacy & security tools" />
+  <meta property="og:description" content="Privacy & security tools"/>
 
   <link rel="stylesheet" href="assets/css/style.css?t=125" type="text/css">
-  <title> Techlore | Spreading Privacy To The Masses </title>
-  <meta name="title" content="Techlore: Spreading Privacy To The Masses">
+  <title> Privacy Tools </title>
+  <meta name="title" content="Privacy & security tools">
   <meta name="description"
-    content="Techlore is spreading privacy and security to the masses; home of Go Incognito, tutorials, reviews, VPN tools, Plexus, communities, and more!" />
-  <!-- Google / Search Engine Tags -->
-  <meta itemprop="name" content=" Techlore | Home ">
-  <meta itemprop="description"
-    content="Techlore is spreading privacy and security to the masses; home of Go Incognito, tutorials, reviews, VPN tools, Plexus, communities, and more!">
-  <meta itemprop="image" content="./assets/svg/logo_v2.svg"><!-- Twitter Meta Tags -->
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content=" Techlore | Spreading Privacy To The Masses ">
-  <meta name="twitter:description"
-    content="Techlore is spreading privacy and security to the masses; home of Go Incognito, tutorials, reviews, VPN tools, Plexus, communities, and more!">
-  <meta name="twitter:image" content="/assets/techlorePreview.png">
-
+    content="Privacy & security tools" />
   <base target="_blank">
   <style>
-    main {
-      max-width: 65rem;
+    body {
+      background-image: linear-gradient(to right, #060707, #b30e7c, #11040c);
+
+    }
+
+    main i {
+      border-radius: 50%;
+      height: 30px;
+      width: 30px;
+      padding: 5px;
+      display: inline-flex;
+      justify-content: center;
+      align-items: center;
+      vertical-align: middle;
+    }
+
+    main i.right {
+      float: right;
+    }
+
+    main img {
+      max-height: 18px;
+    }
+
+    main ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    main a {
+      color: #fff;
+    }
+
+    main li {
+      padding: 10px;
+      margin: 0;
+      margin-bottom: 5px;
+      background: #262626;
+      border-radius: .3rem;
+    }
+
+    .card>div {
+      text-align: center;
+    }
+
+    .ytp-title {
+      display: none !important;
     }
   </style>
   <noscript>
@@ -56,147 +85,1093 @@
   </noscript>
 </head>
 
-<body id="home">
-  <nav>
+<body id="support">
+    <nav>
     <input type="checkbox" id="menu-btn" />
     <label for="menu-btn"><span></span></label>
     <ul>
-      <li><a target="_self" href="./index">Home</a></li>
-      <li><a target="_self" href="./about">About</a></li>
-      <li><a target="_self" href="./videos"> Videos </a></li>
-      <li><a target="_self" href="./coaching"> Coaching </a></li>
-      <li><a target="_self" href="./goincognito">Go Incognito</a></li>
-      <li><a target="_blank" href="https://dispatch.techlore.tech">Blog</a></li>
-      <li><a target="_blank" href="https://discuss.techlore.tech/">Forum</a></li>
-      <li><a target="_self" href="./support">Support Us</a></li>
-      <li>
-        <a class="drop" target="_self" href="./resources">Resources</a>
-        <ul>
-          <li><a target="_self" href="./resources">All Resources</a></li>
-          <li><a href="./spa">SPA Quiz</a></li>
-          <li><a href="./vpn">VPN Toolkit</a></li>
-          <li><a href="https://plexus.techlore.tech">Plexus</a></li>
-        </ul>
-      </li>
-      <li class="social-cnt">
-        <div><a href="https://github.com/techlore" target="_blank" rel="me"><img alt="github"
-              src="assets/svg/github.svg"></a>
-        </div>
-        <div><a href="https://www.patreon.com/techlore" target="_blank" rel="me"><img alt="patreon"
-              src="assets/svg/patreon.svg"></a>
-        </div>
-        <div><a href="https://social.lol/@techlore" target="_blank" rel="me"><img alt="mastodon"
-              src="assets/svg/mastodon.svg"></a>
-        </div>
-        <div><a href="https://discord.techlore.tech" target="_blank" rel="me"><img alt="discord"
-              src="assets/svg/discord.svg"></a>
-        </div>
-      </li>
+      <li><a target="_self" href="https://privacytools.0xgingi.com">Privacy Tools</a></li>
+      <li><a target="_blank" href="https://0xgingi.com/">0xGingi.com</a></li>
     </ul>
   </nav>
-  <svg viewBox="0 0 120 15" class="wavet">
+  <svg viewBox="0 0 120 20" class="wavet">
     <path class="wave"
       d="M 0 0 v 6 C 30 6 30 10 60 10 C 91 10 90 6 120 6 C 150 6 150 10 180 10 C 210 10 210 6 240 6 v -6 h -240 z" />
   </svg>
 
   <main class="_pt0">
-    <header>
-      <div class="_aos-top _centered"><img src="assets/svg/logo.svg" alt="Techlore" class="_wh-230" />
-        <h1>Welcome to Techlore</h1>
-        <h4>Spreading privacy & security to the masses&nbsp;🔐</h4>
-        <p id="patrons">Thank you to our top <a href="https://patreon.com/techlore"><u>patrons:</u></a> BRIGHTSIDE, Clark, & Larry F</p>
-      </div>
-    </header>
-    <div class="grid _centered _pb4">
-      <div class="col-6 _aos-left">
-        <div class="card _bg-black-t _centered">
-          <div class="grid  _centered _g-center">
-            <div class="col-3"><img alt="techlore" class="_wh-130" src="assets/svg/logo.svg"></div>
-            <div>
-              <h2>Content&nbsp;🎥</h2>
-              <i>Guides, reviews, and more!</i>
-              <div class="links">
-                <a href="https://www.youtube.com/c/techlore">YouTube</a>
-                <a href="https://odysee.com/@techlore:3">Odysee</a>
-                <a href="https://tilvids.com/c/techlore_channel/videos">PeerTube</a>
-              </div>
-            </div>
+    <h1> Privacy Tools</h1>
+    <hr>
+    <h2>Software</h2>
+    <div class="grid _np _bg-black-t _ch">
+      <div class="col-4">
+        <div class="card">
+          <div id="desktop-browsers">
+            <a href="#desktop-browsers"><u>&nbsp;Desktop Web Browsers&nbsp;</u></a>
           </div>
+          <ul>
+              <a href="https://www.torproject.org/">
+              <li>
+                <i style="background:#7E4798">
+                  <img src="./assets/logos/torbrowser.svg" alt="tor"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Tor Browser&nbsp;★
+                  </div></li>
+            </a>
+              <a href="https://mullvad.net/browser">
+              <li>
+                <i style="background:#192E45">
+                  <img src="./assets/logos/mullvad2.svg" alt="mullvad browser"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Mullvad Browser&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://github.com/arkenfox/user.js">
+              <li><i style="background:#FF7139">
+                  <img src="./assets/logos/firefox.svg" alt="arkenfox"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Arkenfox&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://brave.com/">
+              <li><i style="background:#FB542B">
+                  <img src="./assets/logos/brave.svg" alt="brave"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Brave&nbsp;★
+                  </div>
+                </li>
+            </a>
+            <a href="https://www.mozilla.org">
+              <li><i style="background:#FF7139">
+                  <img src="./assets/logos/firefox.svg" alt="firefox"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Firefox
+                  </div></li>
+            </a>
+            <a href="https://librewolf.net/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/librewolf.svg" alt="Librewolf"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    LibreWolf
+                  </div></li>
+            </a>
+          </ul>
         </div>
       </div>
-      <div class="col-6 _aos-right">
-        <div class="card _bg-black-t _centered">
-          <div class="grid  _centered _g-center">
-            <div class="col-3"><img alt="goincognito" class="_wh-130" src="assets/svg/goincognito.svg"></div>
-            <div>
-              <h2>Coaching & Course&nbsp;🧑‍🏫</h2>
-              <i>Your guide to security, privacy, & anonymity</i>
-              <div class="links">
-                <a target="_self" href="coaching">Coaching</a>
-                <a target="_self" href="goincognito">Go Incognito</a>
-              </div>
-            </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="android-browsers">
+            <a href="#android-browsers"><u>&nbsp;Android Web Browsers&nbsp;</u></a>
           </div>
+          <ul>
+            <a href="https://play.google.com/store/apps/details?id=org.torproject.torbrowser">
+              <li><i style="background:#7E4798">
+                  <img src="./assets/logos/torbrowser.svg" alt="tor">
+                </i>&nbsp;&nbsp;
+
+                <div class="tooltip">
+                    Tor Browser&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://f-droid.org/en/packages/us.spotco.fennec_dos/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/mull.svg" alt="Mull"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Mull&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://github.com/GrapheneOS/Vanadium/releases">
+              <li><i style="background:#f0eceb">
+                  <img src="./assets/logos/graphene.svg" alt="graphene"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Vanadium&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://brave.com/">
+              <li><i style="background:#FB542B">
+                  <img src="./assets/logos/brave.svg" alt="brave"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Brave&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=org.mozilla.firefox">
+              <li><i style="background:#FF7139">
+                  <img src="./assets/logos/firefox.svg" alt="firefox"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Firefox/Focus
+                  </div></li>
+            </a>
+          </ul>
         </div>
       </div>
-      <div class="col-6 _aos-left">
-        <div class="card _bg-black-t _centered">
-          <div class="grid  _centered _g-center">
-            <div class="col-3"><img alt="blog & forum" class="_wh-130" src="assets/svg/forum.svg"></div>
-            <div>
-              <h2>Blog & Forum&nbsp;💬</h2>
-              <i>Our blog & forum to stay connected</i>
-              <div class="links">
-                <a href="https://dispatch.techlore.tech/">Dispatch</a>
-                <a href="https://discuss.techlore.tech/">Discuss</a>
-              </div>
-            </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="ios-browsers">
+            <a href="#ios-browsers"><u>&nbsp;iOS Web Browsers&nbsp;</u></a>
           </div>
+          <ul>
+            <a href="https://onionbrowser.com">
+              <li><i style="background:#7E4798">
+                  <img src="./assets/logos/tor.svg" alt="tor"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Onion Browser&nbsp;★
+                  </div>
+                </li>
+            </a>
+            <a href="https://brave.com/">
+              <li><i style="background:#FB542B">
+                  <img src="./assets/logos/brave.svg" alt="brave"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Brave&nbsp;★
+                  </div> </li>
+            </a>
+            <a href="https://apps.apple.com/us/app/firefox-private-safe-browser/id989804926">
+              <li><i style="background:#FF7139">
+                  <img src="./assets/logos/firefox.svg" alt="firefox"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Firefox/Focus&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://www.apple.com/safari/">
+              <li><i style="background:#292929">
+                  <img src="./assets/logos/safari.svg" alt="safari"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Safari
+                  </div></li>
+            </a>
+          </ul>
         </div>
       </div>
-      <div class="col-6 _aos-left">
-        <div class="card _bg-black-t _centered _g-center">
-          <div class="grid  _centered _g-center">
-            <div class="col-3"><img alt="vpn" class="_wh-130" src="assets/logos/vpn.svg"></div>
-            <div>
-              <h2>Privacy Resources&nbsp;📚</h2>
-              <i>Resources to assist on your journey</i>
-              <div class="links">
-                <a target="_self" href="./resources"> All </a>
-                <a target="_self" href="./spa"> Quiz </a>
-                <a target="_self" href="./vpn"> VPNs </a>
-                <a target="_blank" href="https://plexus.techlore.tech/"> Plexus </a></div>
-            </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="password-managers">
+            <a href="#password-managers"><u>&nbsp;Password Managers&nbsp;</u></a>
           </div>
+          <ul>
+            <a href="https://keepass.info/">
+              <li><i style="background:#6CAC4D">
+                  <img src="./assets/logos/keepassxc.svg" alt="keepass"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    KeePass&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://bitwarden.com/">
+              <li><i style="background:#175DDC">
+                  <img src="./assets/logos/bitwarden.svg" alt="bitwarden"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Bitwarden&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://passky.org/">
+              <li><i style="background:#363b3f">
+                  <img src="./assets/logos/passky.svg" alt="passky"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Passky&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://1password.com/">
+              <li><i style="background:#363b3f">
+                  <img src="./assets/logos/1p.svg" alt="1password"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    1Password
+                  </div></li>
+            </a>            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="totp">
+            <a href="#totp"><u>&nbsp;TOTP 2FA&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://getaegis.app">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/aegis.svg" alt="aegis"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Aegis (Android)&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://github.com/raivo-otp/ios-application">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/raivo.svg" alt="raivo"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Raivo OTP (iOS)&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://www.yubico.com/products/yubico-authenticator/">
+              <li><i style="background:#363b3f">
+                  <img src="./assets/logos/yubikey.svg" alt="yubikey"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Yubikey (All)&nbsp;★
+                  </div></li>
+            </a>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="encryption">
+            <a href="#encryption"><u>&nbsp;Encryption&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://www.veracrypt.fr">
+              <li><i style="background:#08ABD8">
+                  <img src="./assets/logos/veracrypt.svg" alt="veracrypt"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Veracrypt&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://gnupg.org/">
+              <li><i style="background:#0093DD">
+                  <img src="./assets/logos/gnuprivacyguard.svg" alt="gnuprivacyguard"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    GNU Privacy Guard
+                  </div>
+              </li>
+            </a>
+            <a href="https://www.7-zip.org/">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/7zip.svg" alt="7zip"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    7-Zip
+                  </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="firewalls">
+            <a href="#firewalls"><u>&nbsp;Firewalls&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://safing.io/">
+              <li><i style="background:#000000">
+                  <img src="./assets/logos/portmaster.svg" alt="Portmaster"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Portmaster&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://objective-see.org/products/lulu.html">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/lulu.svg" alt="LuLu"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    LuLu&nbsp;★
+                  </div>
+              </li>
+            </a>
+            <a href="https://netguard.me/">
+              <li><i style="background:#333333">
+                  <img src="./assets/logos/netguard.svg" alt="NetGuard"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    NetGuard
+                  </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="app-stores">
+            <a href="#app-stores"><u>&nbsp;App Stores&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://github.com/Iamlooker/Droid-ify/">
+              <li><i style="background:#ecf0f1">
+                  <img src="./assets/logos/fdroid.svg" alt="fdroid"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Droid-ify&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://f-droid.org/">
+              <li><i style="background:#ecf0f1">
+                  <img src="./assets/logos/fdroid.svg" alt="fdroid"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    F-Droid&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://auroraoss.com/downloads.php">
+              <li><i style="background:#6B62FF">
+                  <img src="./assets/logos/aurora.svg" alt="aurora"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Aurora Store&nbsp;★
+                  </div>
+              </li>
+            </a>
+            <a href="https://altstore.io/">
+              <li><i style="background:#358389">
+                  <img src="./assets/logos/altstore.svg" alt="altstore"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    AltStore
+                  </div></li>
+            </a>
+          </ul>
         </div>
       </div>
     </div>
+    <h2>Operating Systems</h2>
+    <div class="grid _np _bg-black-t _ch">
+      <div class="col-4">
+        <div class="card">
+          <div id="desktop-OS">
+            <a href="#desktop-OS"><u>&nbsp;Desktop&nbsp;</u></a>
+          </div>
+          <ul>
+              <a href="https://www.qubes-os.org/">
+              <li><i style="background:#3874d8">
+                  <img src="./assets/logos/qubes.svg" alt="qubes">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  QubesOS&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://www.archlinux.org/">
+              <li><i style="background:#1793D1">
+                  <img src="./assets/logos/archlinux.svg" alt="arch">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Arch&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://getfedora.org/">
+              <li><i style="background:#294172">
+                  <img src="./assets/logos/fedora.svg" alt="fedora">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Fedora&nbsp;★
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="expendable-OS">
+            <a href="#expendable-OS"><u>&nbsp;Expendable/LiveOS&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://www.whonix.org/">
+              <li><i style="background:#5AB4E1">
+                  <img src="./assets/logos/whonix.svg" alt="whonix"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Whonix&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://tails.boum.org/">
+              <li><i style="background:#56347C">
+                  <img src="./assets/logos/tails.svg" alt="tails"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    TailsOS
+                  </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="android">
+            <a href="#android"><u>&nbsp;Android&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://grapheneos.org/">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/graphene.svg" alt="grapheneos">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  GrapheneOS&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://calyxos.org/">
+              <li><i style="background:#9BCC01">
+                  <img src="./assets/logos/calyxos.svg" alt="calyxos">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  CalyxOS
+                </div></li>
+            </a>
+            <a href="https://divestos.org/">
+              <li><i style="background:#000000">
+                  <img src="./assets/logos/divest.svg" alt="divest"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    DivestOS
+                  </div></li>
+            </a>
+            <a href="https://lineageos.org/">
+              <li><i style="background:#167C80">
+                  <img src="./assets/logos/lineageos.svg" alt="lineage"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    LineageOS
+                  </div></li>
+            </a>
+            <a href="https://microg.org/">
+              <li><i style="background:#F2F2F2">
+                  <img src="./assets/logos/microg.svg" alt="microG"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    MicroG
+                  </div></li>
+            </a>
+            <a href="https://plexus.techlore.tech/">
+              <li><i style="background:#000">
+                  <img src="./assets/svg/plexus.svg" alt="plexus"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Plexus
+                  </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <h2>Other Services</h2>
+    <div class="grid _np _bg-black-t _ch">
+      <div class="col-4">
+        <div class="card">
+          <div id="search">
+            <a href="#search"><u>&nbsp;Search Engines&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://github.com/searxng/searxng">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/searxng.svg" alt="searxng">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  SearXNG&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://search.brave.com/">
+              <li><i style="background:#FB542B">
+                  <img src="./assets/logos/brave.svg" alt="Brave Search">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Brave Search&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://leta.mullvad.net/">
+              <li><i style="background:#192E45">
+                  <img src="./assets/logos/mullvad2.svg" alt="mullvad"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Mullvad leta&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://duckduckgo.com/">
+              <li><i style="background:#DE5833">
+                  <img src="./assets/logos/duckduckgo.svg" alt="duckduckgo"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    DuckDuckGo
+                  </div></li>
+            </a>
+            <a href="https://www.startpage.com/">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/startpage.svg" alt="startpage">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Startpage
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="vpn">
+            <a href="#vpn"><u>&nbsp;VPNs&nbsp;</u></a>
+          </div>
+
+          <ul>
+            <a href="https://www.ivpn.net/">
+              <li><i style="background:#FF3344">
+                  <img src="./assets/logos/ivpn.svg" alt="ivpn">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  IVPN&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://mullvad.net/">
+              <li><i style="background:#192E45">
+                  <img src="./assets/logos/mullvad2.svg" alt="mullvad">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Mullvad&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://protonvpn.com/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/protonVPN.svg" alt="protonVPN">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Proton VPN
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+<div class="col-4">
+        <div class="card">
+          <div id="dns">
+            <a href="#dns"><u>&nbsp;DNS&nbsp;</u></a>
+          </div>
+
+          <ul>
+            <a href="https://nextdns.io/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/next.svg" alt="NextDNS">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  NextDNS&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://www.quad9.net/">
+              <li><i style="background:#282828">
+                  <img src="./assets/logos/quad9.svg" alt="quad9">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Quad9&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://mullvad.net/en/help/dns-over-https-and-dns-over-tls/">
+              <li><i style="background:#192E45">
+                  <img src="./assets/logos/mullvad2.svg" alt="Mullvad DNS">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Mullvad DNS&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://controld.com/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/controld.svg" alt="ControlD">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  CONTROL D
+                </div></i>
+                </a></li>
+            </a>
+            <a href="https://www.privacyguides.org/en/dns/">
+              <li><i style="background:#FFD16F">
+                  <img src="./assets/logos/privacyguides.svg" alt="Privacy Guides DNS">
+                </i> &nbsp;&nbsp;PG DNS Guide</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <div id="messengers">
+            <a href="#messengers"><u>&nbsp;Messengers&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://briarproject.org/">
+              <li><i style="background:#87C214">
+                  <img src="./assets/logos/briar.svg" alt="briar">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Briar&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://www.signal.org/">
+              <li><i style="background:#2592E9">
+                  <img src="./assets/logos/signal.svg" alt="signal">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Signal&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://getsession.org/">
+              <li><i style="background:#333132">
+                  <img src="./assets/logos/session.svg" alt="session">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Session&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://matrix.org/">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/matrix.svg" alt="matrix">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Matrix&nbsp;★
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-4">
+        <div class="card">
+          <div id="cloud">
+            <a href="#cloud"><u>&nbsp;Cloud Storage&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://drive.proton.me">
+              <li><i style="background:#1c1a24">
+                  <img src="./assets/logos/protonmail.svg" alt="proton"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Proton Drive&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://nextcloud.com">
+              <li><i style="background:#0082C9">
+                  <img src="./assets/logos/nextcloud.svg" alt="nextcloud"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Nextcloud&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://mega.io/">
+              <li><i style="background:#ce3f2d">
+                  <img src="./assets/logos/mega1.svg" alt="Mega"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    MEGA&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://crypt.ee/">
+              <li><i style="background:#ffffff">
+                  <img src="./assets/logos/cryptee.svg" alt="cryptee"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Cryptee&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://cryptpad.fr/">
+              <li><i style="background:#4591C4">
+                  <img src="./assets/logos/cryptpad.svg" alt="cryptpad"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    CryptPad
+                  </div></li>
+            </a>
+            <a href="https://cryptomator.org">
+              <li><i style="background:#536666">
+                  <img src="./assets/logos/cryptomator.svg" alt="cryptomator"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Cryptomator&nbsp;
+                  </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="email">
+            <a href="#email"><u>&nbsp;Email&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://proton.me/mail">
+              <li><i style="background:#1c1a24">
+                  <img src="./assets/logos/protonmail.svg" alt="protonmail">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Proton Mail&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://www.tutanota.com/">
+              <li><i style="background:#A0181A">
+                  <img src="./assets/logos/tutanota.svg" alt="tutanota">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Tutanota
+                </div></li>
+            </a>
+            <a href="https://mailbox.org/">
+              <li><i style="background:#76bc20">
+                  <img src="./assets/logos/mailbox.svg" alt="mailbox">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Mailbox.org
+                </div></li>
+            </a>
+            <a href="https://www.startmail.com/">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/startmail.svg" alt="startmail">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  StartMail
+                </div></li>
+            </a>
+            <a href="https://www.privacyguides.org/email/#self-hosting-email">
+              <li><i style="background:#2c3e50">
+                  <img src="./assets/logos/selfhost.svg" alt="selfhost">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Self-Host
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="alias">
+            <a href="#alias"><u>&nbsp;Aliasing</u></a>
+          </div>
+
+          <ul>
+            <a href="https://simplelogin.io">
+              <li><i style="background:#D13C8D">
+                  <img src="./assets/logos/simplelogin.svg" alt="simplelogin">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  SimpleLogin&nbsp;★
+                </div>
+              </li>
+            </a>
+            <a href="https://anonaddy.com">
+              <li><i style="background:#19216C">
+                  <img src="./assets/logos/anonaddy.svg" alt="anonaddy">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  AnonAddy
+                </div></li>
+            </a>
+            <a href="https://mysudo.com">
+              <li><i style="background:#4C6EF3">
+                  <img src="./assets/logos/mysudo.svg" alt="mysudo">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  MySudo&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://privacy.com">
+              <li><i style="background:#232320">
+                  <img src="./assets/logos/privacycom.svg" alt="privacy.com">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Privacy.com&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://www.guerrillamail.com/">
+              <li><i style="background:#462400">
+                  <img src="./assets/logos/guerrilla.svg" alt="guerrilla mail">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Guerrilla Mail
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="cryptocurrency">
+            <a href="#cryptocurrency"><u>&nbsp;Cryptocurrencies&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://www.getmonero.org/">
+              <li><i style="background:#ff6600">
+                  <img src="./assets/logos/localXMR.svg" alt="monero">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Monero&nbsp;★
+                </div></li>
+            </a>      
+            <a href="https://localmonero.co/">
+              <li><i style="background:#0D64C0">
+                  <img src="./assets/logos/localXMR.svg" alt="LocalMonero">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  LocalMonero&nbsp;★
+                </li>
+            </a>      
+            <a href="https://samouraiwallet.com/">
+              <li><i style="background:#C12727">
+                  <img src="./assets/logos/sw.svg" alt="Samouraiwallet">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Samourai Wallet&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://cakewallet.com/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/cake.svg" alt="Cake Wallet">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Cake Wallet&nbsp;★
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="hardware-2fa">
+            <a href="#hardware-2fa"><u>&nbsp;Hardware 2FA&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://www.yubico.com/">
+              <li><i style="background:#9ACB3D">
+                  <img src="./assets/logos/yubikey.svg" alt="yubikey"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Yubikey&nbsp;★
+                  </div></li>
+            </a>
+            <a href="https://solokeys.com/">
+              <li><i style="background:#fff">
+                  <img src="./assets/logos/solo.svg" alt="solokeys"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    SoloKeys
+                  </div></li>
+            </a>
+            <a href="https://www.nitrokey.com/">
+              <li><i style="background:#D1003B">
+                  <img src="./assets/logos/nitrokey.svg" alt="nitrokey"></i>&nbsp;&nbsp;
+                  <div class="tooltip">
+                    Nitrokey
+                  </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="vps">
+            <a href="#vps"><u>&nbsp;Web Hosting/VPS&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://njal.la">
+              <li><i style="background:#1BD6AB">
+                  <img src="./assets/logos/njalla.svg" alt="njalla">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Njalla
+                </div></li>
+            </a>
+            <a href="https://www.orangewebsite.com">
+              <li><i style="background:#e28306">
+                  <img src="./assets/logos/orange.svg" alt="orange">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  OrangeWebsite
+              </li>
+            </a>
+            <a href="https://1984.hosting">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/1984.svg" alt="1984">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  1984 Hosting
+                </div></li>
+            </a>
+            <a href="https://hetzner.com">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/hetzner.svg" alt="hetzner">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  Hetzner
+                </div></li>
+            </a>
+
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="other">
+            <a href="#other"><u>&nbsp;Other Tools&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://onionshare.org/">
+              <li><i style="background:#4E0D4E">
+                  <img src="./assets/logos/onionshare.svg" alt="onionshare">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  OnionShare&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://joindeleteme.com/">
+              <li><i style="background:#626390">
+                  <img src="./assets/logos/abine.svg" alt="abine"></i>
+                &nbsp;&nbsp;
+                <div class="tooltip">
+                  Abine DeleteMe&nbsp;★
+                </div></li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="0xgingi">
+            <a href="#0xgingi"><u>&nbsp;0xGingi Hosted&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://search.0xgingi.com/">
+              <li><i style="background:#ffffff">
+                  <img src="./assets/logos/searxng.svg" alt="searxng">
+                </i> &nbsp;&nbsp;
+                <div class="tooltip">
+                  SearxNG&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://element.onionsherpa.com/">
+              <li><i style="background:#f5f5f5">
+                  <img src="./assets/logos/matrix.svg" alt="matrix"></i>
+                &nbsp;&nbsp;
+                <div class="tooltip">
+                  Matrix/Element&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://invidious.0xgingi.com/">
+              <li><i style="background:#000000">
+                  <img src="./assets/logos/youtube.svg" alt="invidious"></i>
+                &nbsp;&nbsp;
+                <div class="tooltip">
+                  Invidious (Youtube)&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://reddit.0xgingi.com/">
+              <li><i style="background:#000000">
+                  <img src="./assets/logos/reddit.svg" alt="reddit"></i>
+                &nbsp;&nbsp;
+                <div class="tooltip">
+                  libreddit&nbsp;★
+                </div></li>
+            </a>
+            <a href="https://nitter.0xgingi.com/">
+              <li><i style="background:#000000">
+                  <img src="./assets/logos/twitter.svg" alt="twitter"></i>
+                &nbsp;&nbsp;
+                <div class="tooltip">
+                  nitter&nbsp;★
+                </div></li>
+            </a>
+
+          </ul>
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+      <h2>External Resources</h2>
+      <div class="grid _np _bg-black-t _ch">
+        <div class="col-4">
+        <div class="card">
+          <div id="guides">
+            <a href="#guides"><u>&nbsp;Guides&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://techlore.tech/">
+              <li><i style="background:#000000">
+                  <img src="./assets/svg/logo.svg" alt="techlore"></i>
+                &nbsp;&nbsp;Techlore</li>
+            </a>
+            <a href="https://thenewoil.org/">
+              <li><i style="background:#000000">
+                  <img src="./assets/logos/thenewoil.svg" alt="The New Oil"></i>
+                &nbsp;&nbsp;The New Oil</li>
+            </a>
+            <a href="https://privacyguides.org/">
+              <li><i style="background:#FFD16F">
+                  <img src="./assets/logos/privacyguides.svg" alt="privacyguides">
+                </i> &nbsp;&nbsp;Privacy Guides</li>
+            </a>
+            <a href="https://securityplanner.consumerreports.org/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/cr.svg" alt="Consumer Reports"></i>
+                &nbsp;&nbsp;CR Security Planner</li>
+            </a>
+            <a href="https://ssd.eff.org/">
+              <li><i style="background:#8fc8c7">
+                  <img src="./assets/logos/ssd.svg" alt="EFF Surveillance Self Defense"></i>
+                &nbsp;&nbsp;EFF SSD</li>
+            </a>
+            <a href="https://freedom.press/training/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/fotp.svg" alt="Freedom of the Press Training Guides"></i>
+                &nbsp;&nbsp;FOTP Guides</li>
+            </a>
+            <a href="https://anonymousplanet.org/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/anonp.svg" alt="The Hitchhiker’s Guide to Online Anonymity"></i>
+                &nbsp;&nbsp;Hitchhiker's Guide</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+        <div class="col-4">
+          <div class="card">
+          <div id="creators">
+            <a href="#creators"><u>&nbsp;Creators&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://techlore.tech/">
+              <li><i style="background:#000000">
+                  <img src="./assets/svg/logo.svg" alt="techlore"></i>
+                &nbsp;&nbsp;Techlore</li>
+            </a>
+            <a href="https://surveillancereport.tech/">
+              <li><i style="background:#323377">
+                  <img src="./assets/logos/sr.svg" alt="surveillance report">
+                </i> &nbsp;&nbsp;Surveillance Report</li>
+            </a>
+            <a href="https://www.optoutpod.com/">
+              <li><i style="background:#DD4345">
+                  <img src="./assets/logos/optout.svg" alt="Opt Out"></i>
+                &nbsp;&nbsp;Opt Out</li>
+            </a>
+            <a href="https://inteltechniques.com/podcast.html">
+              <li><i style="background:#3D4853">
+                  <img src="./assets/logos/osintshow.svg" alt="Privacy Security & OSINT Show">
+                </i> &nbsp;&nbsp;OSINT Show</li>
+            </a>
+            <a href="https://www.youtube.com/channel/UC5UAwBUum7CPN5buc-_N1Fw">
+              <li><i style="background:#ed1853">
+                  <img src="./assets/logos/TLE.svg" alt="The Linux Experiment">
+                </i> &nbsp;&nbsp;The Linux Experiment</li>
+            </a>
+            <a href="https://firewallsdontstopdragons.com/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/fdsd.svg" alt="Firewalls Don't Stop Dragons">
+                </i> &nbsp;&nbsp;FDSD</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+      <div class="col-4">
+        <div class="card">
+          <div id="rights">
+            <a href="#rights"><u>&nbsp;Digital Rights&nbsp;</u></a>
+          </div>
+          <ul>
+            <a href="https://www.eff.org/">
+              <li><i style="background:#ED1E1E">
+                  <img src="./assets/logos/EFF.svg" alt="EFF"></i>
+                &nbsp;&nbsp;EFF</li>
+            </a>
+            <a href="https://edri.org/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/edri.svg" alt="EDRi"></i>
+                &nbsp;&nbsp;EDRi</li>
+            </a>
+            <a href="https://calyxinstitute.org/">
+              <li><i style="background:#7BAB2B">
+                  <img src="./assets/logos/calyxinst.svg" alt="Calyx Institute">
+                </i> &nbsp;&nbsp;Calyx Institute</li>
+            </a>
+            <a href="https://privacyinternational.org/">
+              <li><i style="background:#09DEFE">
+                  <img src="./assets/logos/PI.svg" alt="Privacy International">
+                </i> &nbsp;&nbsp;Privacy International</li>
+            </a>
+            <a href="https://epic.org/">
+              <li><i style="background:#FFFFFF">
+                  <img src="./assets/logos/epic.svg" alt="EPIC">
+                </i> &nbsp;&nbsp;EPIC</li>
+            </a>
+          </ul>
+        </div>
+      </div>
+
   </main>
   <svg viewBox="0 0 120 20">
     <path class="wave"
       d="M 0,10 C 30,10 30,15 60,15 90,15 90,10 120,10 150,10 150,15 180,15 210,15 210,10 240,10 v 28 h -240 z" />
   </svg>
-  <footer>
-    <div class="col-3 _flex-center">
-      Copyright &copy; Techlore, Inc. 2023&nbsp;|&nbsp;<a  href="./contact">Contact</a>&nbsp;|<a href="./privacy">&nbsp;Privacy</a>&nbsp;&nbsp;
-    <a href="https://www.eff.org/">
-        <img alt="EFF 2022 Member" style="width:52px;height:52px;" src="assets/svg/effmember.svg">
-      </a>
-      <a href="https://directories.onepercentfortheplanet.org/profile/techlore">
-        <img alt="1Percent For The Planet Member" style="width:52px;height:52px;" src="assets/svg/1pmember.svg">
-      </a>
-    </div></div>
-  </footer>
   <div class="gt-link hide" id="gt-link">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6">
       <path d="M12 6H0l6-6z" /></svg>
-  </div>
+    </a>
+
 </body>
 <script src="assets/javascript/script.js" type="text/javascript"></script>
-<script>
-  $(document).ready(function () {
-    $().aos();
-  });
-</script>
-
 </html>
